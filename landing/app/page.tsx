@@ -4,8 +4,7 @@ import { Users, TrendingUp, Target, Shield } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
-  const heroBackgroundUrl =
-    "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+  const heroBackgroundUrl = "/images/hero_md.jpg";
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -26,12 +25,14 @@ export default function Home() {
               rendimientos automáticos con DeFi
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button
-                size="lg"
-                className="bg-[#bbe6c5] hover:bg-[#a8d4b2] text-[#1e253b] font-semibold px-8 py-4 text-lg rounded-full transition-all duration-300 transform hover:scale-105"
-              >
-                Crear un Pool
-              </Button>
+              <Link href="/app">
+                <Button
+                  size="lg"
+                  className="bg-[#bbe6c5] hover:bg-[#a8d4b2] text-[#1e253b] font-semibold px-8 py-4 text-lg rounded-full transition-all duration-300 transform hover:scale-105"
+                >
+                  Crear un Pool
+                </Button>
+              </Link>
               <Button
                 variant="outline"
                 size="lg"
@@ -99,8 +100,8 @@ export default function Home() {
                   Metas Claras
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Establece objetivos específicos como viajes, regalos o
-                  emergencias y sigue tu progreso en tiempo real.
+                  Establece objetivos específicos como ✈️ viajes, 🎁 regalos o
+                  🚑 emergencias y sigue tu progreso en tiempo real.
                 </p>
               </CardContent>
             </Card>
@@ -232,12 +233,14 @@ export default function Home() {
               financieras con PoolAmigos
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button
-                size="lg"
-                className="bg-[#bbe6c5] hover:bg-[#a8d4b2] text-[#1e253b] font-semibold px-8 py-4 text-lg rounded-full transition-all duration-300 transform hover:scale-105"
-              >
-                Crear un Pool
-              </Button>
+              <Link href="/app">
+                <Button
+                  size="lg"
+                  className="bg-[#bbe6c5] hover:bg-[#a8d4b2] text-[#1e253b] font-semibold px-8 py-4 text-lg rounded-full transition-all duration-300 transform hover:scale-105"
+                >
+                  Crear un Pool
+                </Button>
+              </Link>
               <Button
                 variant="outline"
                 size="lg"
